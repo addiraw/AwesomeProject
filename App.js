@@ -1,21 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+import React from 'react'
+import {View,Image,Text, StyleProp} from 'react-native'
+const App =()=>
+{
+return (
+  <View>
+  <Image source={require('./assets/Untitled.png')}
+    style={{height:40,width:50}}
+  />
+  <Text>Match Calculator</Text>
+  </View>
+)
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App
